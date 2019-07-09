@@ -1,6 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const element = <h1> React </h1>;
+// diferente type of imports and using
+import Salutation from './components/salutation';
 
-ReactDOM.render(element, document.getElementById('root'));
+ReactDOM.render(
+    <div>
+        <Salutation type="Good Morning" name="Sergio" />
+    </div>
+,document.getElementById('root'));
